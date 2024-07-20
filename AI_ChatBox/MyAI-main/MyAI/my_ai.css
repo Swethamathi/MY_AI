@@ -1,0 +1,159 @@
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  
+  background-size: cover;
+
+  margin: 0;
+}
+
+.msger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 867px;
+  margin: 25px 10px;
+  height: calc(100% - 50px);
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  background-color: #fff;
+  
+  overflow: hidden;
+}
+
+.msger-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  background-color:darkcyan;
+  color: #fff;
+}
+
+.msger-header-title {
+  font-size: 24px;
+}
+
+.msger-header-options {
+  display: flex;
+  align-items: center;
+}
+
+.msger-chat {
+  flex: 1;
+  overflow-y: auto;
+  padding: 10px;
+  background: #f0f0f0;
+  background-image: url('https://img.freepik.com/free-photo/3d-rendering-biorobots-concept_23-2149524396.jpg?t=st=1720953189~exp=1720956789~hmac=bc67ffa0b49d8564f048120d7cd0b7e5b6897a6927b05429a9d50548917153e7&w=996');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.msg {
+  display: flex;
+  align-items: flex-end;
+  margin-bottom: 10px;
+}
+
+.msg:last-of-type {
+  margin-bottom: 0;
+}
+
+.left-msg .msg-img {
+  order: 1;
+}
+
+.right-msg .msg-img {
+  order: 2;
+}
+
+.msg-img {
+  width: 50px;
+  height: 50px;
+  margin: 0 10px;
+  background: no-repeat center center;
+  background-size: cover;
+  border-radius: 50%;
+}
+
+.msg-bubble {
+  max-width: 450px;
+  padding: 15px;
+  border-radius: 15px;
+  background:darkcyan;
+  color: #fff;
+}
+
+.left-msg .msg-bubble {
+  border-bottom-left-radius: 0;
+  background: #e5e5ea;
+  color: #000;
+}
+
+.right-msg .msg-bubble {
+  border-bottom-right-radius: 0;
+  background:darkcyan;
+  color: #fff;
+}
+
+.msg-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.msg-info-name {
+  font-weight: bold;
+}
+
+.msg-info-time {
+  font-size: 0.85em;
+}
+
+.msger-inputarea {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #ddd;
+  background: #eee;
+}
+
+.msger-input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  outline: none;
+  font-size: 16px;
+}
+
+.msger-send-btn {
+  margin-left: 10px;
+  padding: 10px 20px;
+  border: none;
+  background: #007bff;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 3px;
+  outline: none;
+}
+
+.msger-send-btn:hover {
+  background: #0056b3;
+}
+
+#hello {
+  text-align: center;
+  padding: 10px;
+  background:darkcyan;
+  color: #fff;
+  border-top: 1px solid #ddd;
+}
